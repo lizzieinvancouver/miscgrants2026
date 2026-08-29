@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+\usepackage[top=1.00in, bottom=1.0in, left=1in, right=1in]{geometry}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{wrapfig}
+\usepackage[font=small,labelfont=bf]{caption}
+% counting words? https://app.uio.no/ifi/texcount/online.php
+
+\def\labelitemi{--}
+\parindent=0pt
+
+\begin{document}
+\renewcommand{\refname}{\CHead{}}
+% \setlength{\parindent}{0cm}
+% \setlength{\parskip}{5pt}
+
+
+{\bf Title:} Strengthening forest resilience through cross-disciplinary modeling of tree growth and decline across North America 
+
+{\bf Funding for:} 24-week fellowship for E. M. Wolkovich of UBC  (Canada)  to visit Andrew Gelman at Columbia University (USA)
+
+\begin{abstract}
+Northern hemisphere forests are critical for healthy ecosystems, healthy people and drive the economies of many countries. They are also highly threatened by multiple risks, including climate change, pests and fire. While extensive research has worked to map and model these threats, the complexity of tree growth and the multi-scale and multi-threat nature of forest health has made understanding the major drivers of forest growth and decline difficult. Here, we propose a fellowship linking the University of British Columbia (Canada) with Columbia University (USA) to bridge across disciplines (ecology, statistics and climatology) for improved models of tree and forest health. Focusing on North American forests, we will model the complexity of tree growth at the individual level then use hierarchical modeling to integrate additional effects at the species, stand and regional levels to produce a continental understanding how, where and why forests are growing or declining. We expect this project will provide major new forecasts of tree growth and forest health, that can clearly separate out the effects of individual-level tree growth from stand level properties (e.g. species mixtures) and events (e.g., fire and pest outbreaks). Such forecasts can help improve large-scale modeling of the earth system and guide managers in how to manage forests for climate resiliency. 
+\end{abstract}
+
+
+\section*{Background/Introduction}
+\setlength{\intextsep}{6pt} 
+\begin{wrapfigure}{r}{0.35\textwidth}
+\centering
+\includegraphics[width=0.33\textwidth]{figs/ut539_tree22_1panel.png}
+\caption{An example of the complexity of tree growth from one \emph{Pinus ponderosa} tree sampled in Utah. Dots show the observed radial growth each year, while the coloring represents estimates from a hierarchical Gaussian process model.} 
+\label{fig:onetree}
+\end{wrapfigure}
+Temperate forests across the globe provide critical resources for people. Economically their timber underpins the economies of many states, provinces and countries, with their economic value increasing with climate change through their role as natural climate solutions increasing. Temperate forests currently sequester substantial fossil fuel emissions, offsetting planetary warming and acting as `natural climate solutions.' The concept of natural climate solutions has increasingly recognized the role that forests play in carbon sequestration and other ecosystem services, including biodiversity maintenance and protection, water quality and stabilizing soils. 
+
+Yet forest globally are threatened by multiple risks. In addition to forest loss and fragmentation, intact forests face potential declines due to climate change stress and the related threats of increasing wildfires and pest outbreaks. Understanding, quantifying and forecasting these declines is clearly important to build resilience in forests and guide forest policy and management, but has been slow due to the inherent complexity of tree growth. 
+
+Healthy resilient forests are an emergent property of individual-level tree growth, which is often highly variable and apparently difficult to predict (Fig. \ref{fig:onetree}). For this reasons, most work on radial tree growth to date has often worked from stand-level averages, after correcting for age-trends (tree-level allometry).This approach has been incredibly powerful for understanding the major role of climate in driving tree growth, and allowed global reconstructions of millennial-scale climate from tree growth patterns. Yet it has also made it difficult to identify the complex interactions that drive tree growth and thus forest health and decline. While recent work has begun to examine tree growth more in-depth, it has generally focused on only one species and region, limiting any relevance to larger scale forest management and policy.
+
+Addressing these limitations requires a new approach to modeling forest health. It requires complex hierarchical models that begin with modeling drivers of variability in the time-series of individual trees (Fig. \ref{fig:onetree}) and then build up to understand how different species and stands (sites) respond to climate and other factors. 
+ 
+ \iffalse
+* Why forests matter
+* What's wrong with current forecasts?
+	- Trees are complicated, to get around this, people lump them together... 
+	- Signal-free issues
+* What's needed
+\fi 
+\section*{Aims} Our main objectives are: 
+
+* Hierarchical models of tree growth responses to climate, with approaches that can separate out species responses from stand and regional-level impacts. \\
+* Layering in new data at the stand-level to understand the impacts of pest outbreaks and fire relative to climate.\\
+* New forecasts from these models that can help managers, policy-makers and other stakeholders understand the impacts of: different future climate change scenarios (based on different emission levels), species planting regimes, scale of future wildfires and pest outbreaks. 
+
+ \iffalse
+* Better models of growth responses to climate across species
+	- separating out climate from species
+* Dealing with tree and stand-level responses to elucidate pest and fire impacts
+	- quantifying loss due to fire vs pest, versus climate change...
+* New forecasts to guide forest management (planting after harvesting, regeneration after fire/pests)
+\fi 
+
+\section*{Methods}
+This project will draw on data from the International Tree Ring Data Bank (ITRDB), climate data from PRISM and NASA and new mapping efforts of fire and pest outbreaks to model tree growth across North America since 1896. Working together, Wolkovich, Gelman and colleagues will develop the exact approach during the fellowship but we expect it will build from individual-level tree models of growth with age (allometry) and in response to annual climate with additional effects at the stand (or site) and regional levels. This multi-level approach will allow us to estimate the effect of different species, different climate and events that occur at the stand-level, including fire and pest outbreaks. For climate, we plan to begin by focusing on summer warmth through growing degree days (GDD), moisture estimated through precipitation sums and stress effects possible through high vapor pressure deficit. This focus on climate will be critical for forecasting from our model to predict how forests will respond to continuing anthropogenic climate change. These forecasts will be especially unique in providing guidance on how they may shift depending on future forest species and age composition and the management of fire and pest outbreaks. % yielding a multi-risk view of our future ...
+% starting with western North America!  
+%  ITRDB data, potentially combined with forest inventory data
+% Overlays of fire and pests in North America where there are some existing layers %todo -- find layers from Park/Ben
+% Add in provenance trial information? Sure, why not ... 
+
+\section*{Expected outputs \& impact}
+* New forecasts to guide forest management (planting after harvesting, regeneration after fire/pests)
+* Publications
+* Amazing new collaborations 
+
+\section*{Timeframe} % schedule/timeline
+The fellowship is proposed for 15 September 2027 to 29 February 2028 (24 weeks) to bring Professor Elizabeth Wolkovich to Columbia University to work with Andrew Gelman and collaborators. Some data collection and cleaning will like start before the fellowship to maximize the in-person time. 
+
+{\bf September 2027:} Gather, merge and clean tree ring and climate data.\\
+{\bf October-November 2027:} Gather mapping layers for forest pest and fire; begin model development.\\
+{\bf December 2027:} Retrodictive checks and begin to work on visualizations for communication and dissemination.\\
+{\bf January-February 2028:} Forecasting from model. Prepare publication and final report. 
+
+\section*{Mutual benefits \& Hosting institutions}
+Wolkovich is a leading plant biology researcher who has defined and led the field of temporal ecology, focused on better understanding how biological time and climate shape plants, communities and ecosystem. Her work is highly cross-disciplinary, drawing on expertise from climatology and evolutionary biology. 
+
+She will bring this cross-disciplinary expertise to Columbia, creating collaborations to develop better models of tree growth to strengthen and invigorate ties between the Columbia Climate School and Lamont Doherty Earth Observatory, while also building a lasting connection between UBC and Columbia. Columbia's vibrant research community across the Departments of Statistics and Political Science---where Gelman is appointed---and the University's focus on cross-disciplinary earth system science through the Columbia Climate School and Lamont is uniquely positioned to support the proposed work and make sure it is well disseminated. Gelman himself is a rare researcher who fully combines scientific and statistical approaches to solve major challenges and then communicates them broadly. While Gelman and Wolkovich have known each other through the statistical research community, they have only worked together briefly (and remotely) on a project on trophic synchrony. If funded, this fellowship would thus help launch their first major collaboration.  
+
+\section*{Relevance to the selection criteria}
+
+\subsection*{Contributions to CRP and action area}
+The proposed work directly addresses the action area \emph{Addressing the action area of: strengthening resilience in the face of multiple risks in a connected world} with relevance also to \emph{innovating for sustainable production and productivity}. Dealing with the uncertainty due to multiple risks of fires, pests and climate change in forests around the globe is critical but limited by our understanding of what are the major drivers of forest growth versus decline.
+
+Our focus on forests is a priority area for CRP with obvious extensions to other relevant topics, including soil, water, and biodiversity. We plan to focus on North American forests, many of which are highly managed for their timber and increasingly as natural climate solutions through their role in carbon sequestration. Given that forests cover much of the North American continent, they also broadly control biodiversity, water quality and soil stability and development.
+
+\subsection*{Scientific excellence and innovation}
+
+\section*{Feasibility}
+
+\subsection*{Scientific record and achievements of the proposer}
+
+\subsection*{Crossing disciplines}
+Cross-disciplinary: Gelman (stats) and Wolkovich (ecology), drawing on expertise from Ben Cook (climatology) and Bob (computational methods). 
+
+\subsection*{Dissemination}
+
+\subsection*{Potential impact}
+
+\subsection*{Policy relevance}
+The same forest types and tree species occur across Canada and the United States, making connections in forest modeling and management between these countries important, especially with continuing climate change. 
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+\citep{ospreebbms}
+
+\bibliographystyle{/Users/Lizzie/Documents/EndnoteRelated/Bibtex/styles/besjournals}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+
+\clearpage
+\section{Figures}
+
+\begin{figure}[h!]
+\includegraphics[width=0.4\textwidth]{..//..//..//..//Professional/images/ColylusVineFruit2.png}
+\caption{I am a caption.} 
+\label{fig:figname}
+\end{figure}
+
