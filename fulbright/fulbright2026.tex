@@ -1,0 +1,143 @@
+\documentclass[11pt,letter,oneside]{article}
+\usepackage{sectsty,setspace} 
+\usepackage[top=1.00in, bottom=1.0in, left=1in, right=1in]{geometry} 
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{amsmath,latexsym,amssymb,wasysym}
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage{citesupernumber}
+%\usepackage{citecollapse}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{float}
+\restylefloat{table}
+\usepackage[table]{xcolor} % http://ctan.org/pkg/xcolor
+\usepackage{gensymb} % You have to have this to use \degree
+\usepackage{wrapfig}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\setlength\parindent{0pt} % no indents throughout
+
+\setlength{\abovecaptionskip}{1pt}
+\setlength{\belowcaptionskip}{-10pt}
+\usepackage[font={small}]{caption}
+
+\parskip=6pt
+\pagenumbering{arabic}
+\pagestyle{plain}
+% squeeze spacey
+\linespread{0.99}
+\addtolength{\itemsep}{-0.05in}
+\usepackage{multicol}
+ 
+\newenvironment{smitemize}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}
+{\end{itemize}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LO]{Fulbright 2026}
+\fancyhead[RO]{E. M. Wolkovich}
+
+\newcommand{\Section}[1]{\vspace{-8pt}\section{\hskip -1em.~~#1}\vspace{-3pt}} 
+
+
+\begin{document}
+\bibliographystyle{/Users/Lizzie/Documents/EndnoteRelated/Bibtex/styles/ajhg}
+\renewcommand{\refname}{\CHead{}}
+
+\begin{centering}
+{\bf Designing climate-resilient agriculture through crop portfolios}\\ % Developing climate resilient agriculture through heat tolerant crops and their cultivars
+\end{centering}
+\vspace{2ex}
+
+\emph{Abstract (1000 characters):} Hotter, drier summers and increasing extremes are challenging growers across the world. This is especially clear in Europe where summer heat is increasing faster than in the Arctic. Maintaining agricultural regions that continue to provide economic livelihoods, high-quality products while continuing traditional practices requires understanding of the climate resiliency of current crops, and how to best exploit it. Here I propose to leverage the deep agriculture knowledge, data and cutting-edge research in Montpellier with my skills in hierarchical modeling to address this. Working with unparalleled data across varieties and clones of one major crop, we will quantify heat tolerance across cultivars and clones to help growers develop climate-smart portfolios. % with extensions well beyond winegrapes 
+
+% Shorter ... 41 characters remaining
+% Hotter, drier summers and increasing extremes are challenging growers across the world. This is especially clear in Europe where summer heat is increasing faster than in the Arctic. Maintaining agricultural regions requires understanding of the climate resiliency of current crops, and how to best exploit it. Here I propose to leverage the deep agriculture knowledge, data and cutting-edge research in Montpellier with my skills in hierarchical modeling to address this. Working with unparalleled data across varieties and clones of one major crop, we will quantify heat tolerance across cultivars and clones to help growers develop climate-smart portfolios.
+
+% This document addresses key elements of your project: what the project is, why it is needed, the objective(s) of the project, how you are prepared for the project and how you will accomplish it, the project timeline, and the outcomes and impact
+% https://fulbrightscholars.org/us-scholar-awards#steps --> Project statement
+% 3-5 pages
+% Single-spaced, 12-point font, 1-inch margins. This helps ensure readability.
+% Use headers and/or bullets to organize and convey key elements; use page numbers.
+% Citations are not required in the Project Statement. You may use endnotes or footnotes in 10-point font (use any format for citations). If you are applying for Research or Teaching/Research, you may put the full citation for a source mentioned in your Project Statement in the Reference List/Bibliography.
+
+{\bf Background}
+
+Developing resilient agricultural systems today requires human adaptation to deal with the increasing stressors of climate change. Hotter, drier summers and increasing extremes in heat, cold and precipitation are challenging growers across the world, especially in Europe where summer heat is increasing faster than in the Arctic. Maintaining agricultural regions that continue to provide economic livelihoods, high-quality products while continuing traditional practices relies on a greater understanding of the climate resiliency of current crops, and how to best exploit it as the climate continues to shift. 
+
+...
+
+More on the importance of heat tolerance and heat tolerance across crops and cultivars.
+
+Then more on why we do not have good information on this to help growers adapt: the current hurdles this project will overcome. 
+
+{\bf What? }
+
+Working with colleagues in Montpellier, I will develop temperature response curves for the crop of winegrapes including its cultivars and clones. We plan to use winegrapes as a case study because they currently have the data on seasonal development and genetic information required to build the most robust models, but our approach will be specifically designed to extend to other crops. 
+
+{\bf How? }
+
+Our approach centers around (1) the domestication of winegrapes across Europe's extensive climate gradient that led to cultivars (varieties) that likely vary strongly in their heat tolerance and (2) the shared evolutionary history of winegrape cultivars that we can use for more robust estimates across diverse varieties. We will accomplish this by leveraging existing climate data with Domaine de Vassal's incredible collection of seasonal development data across over 200 varieties, alongside likely other data from resources across INRAe and other regional programs that have collected data on season development, from budburst to flowering, and fruit ripening (veraison). 
+
+Collaborators in Montpellier will provide expertise in the seasonal development data across cultivars and their genetic relationships, which we will model by combining two unique modeling approaches my lab has developed. The first is a fully differentiable thermal development curve (Fig. \refl{fig:tempcurve}), and the second is a using an hierarchical approach that leverages genetic relationships between cultivars to best estimate the heat tolerance of each cultivar. Each approach has successfully been applied in other cases to woody plants, but have not been combined to estimate thermal responses across diverse cultivars. Given sufficient information on clones (within cultivars) we will additionally add this hierarchical level to separate out the climate adaptation potential of clones versus cultivars. 
+
+% Potential extensions to drought ... I doubt we will have time or data ... BUT say something about drought. 
+
+\begin{wrapfigure}{r}{0.67\textwidth}
+\centering
+\includegraphics[width=0.65\textwidth]{figs/tempcurve_3vars.png}
+\caption{This project will estimate a temperature response curve for winegrapes as a crop, including heat tolerance variation across cultivars. Here we show current results for veraison thermal development (left) and variation in the optimal temperature for three cultivars (right) but this project will extend to up to 200 different cultivars (exact number depends on data for each phenological stage) and more accurately model them given genetic information.} 
+\label{fig:tempcurve}
+\end{wrapfigure}
+\setlength{\intextsep}{6pt} 
+\iffalse
+Given their importance to agricultural and climate forecasts, varying models of the complete plant life cycle have been developed\cite{Chuine:2001ab}, especially for agricultural crops\cite{bowen2015}. Current models, however, often do not consider hardiness, rarely consider multiple varieties and are often so extensively parameterized (for example, including temperature response curves within larger models of carbon and nutrient pools in the soil and plant) that it is difficult to robustly estimate temperature responses. Many models simply set the upper limit for many plant events at 40$\degree$C, even though this limit varies across species, populations and phenological events\cite{parent2012}.
+
+I plan to leverage my existing expertise in phenological models, data synthesis, hierarchical Bayesian approaches\cite{flynn2018,ospreebbms} and my developing research in plant hardiness\cite{cat2021pep,cat2021exp,cat2019} to build a joint model of developmental sequences for winegrapes---one of the world's most economically important crops\cite{faostat}. 
+% plants focused on temperature as dominant controller. By focusing on temperature responses and using cutting-edge Bayesian approaches\cite{BDA,Carpenter:2017stan}, I will be able to estimate all parameters together and thus more accurately estimate temperatures responses and their uncertainity. 
+
+Models of dormancy will be focused mainly on cold hardiness, the critical fitness component during the rest period. I expect to draw on models from pharmacokinetics/pharmacodynamics\cite{pkpd2015}. My lab currently has a hardiness model based on a basic dose-response curve, with the `dose' being cold temperatures that induce cold hardiness up to some maximum threshold; I will expand on this fundamental advance to model the onset and release of cold hardiness. These two phases are critical as plants are highly vulnerable in these transition periods. % Cold hardiness release will then be linked to the onset of development leading to budburst. 
+
+To model growing season events (budburst, flowering, fruit ripening) I will borrow from elements of basic survival models, which typically model the event of death as dependent on some underlying process. Such models, however, are ideal for modeling event processes as they can at once determine the shape of the temperature response curve (i.e., what temperatures are too low, optimal or too high) and the required threshold to transition between events. To both leverage the most data and to compare across varieties, I will use Bayesian hierarchical modeling\cite{BDA,Carpenter:2017stan} to include at least 10 different winegrape varieties (for each variety I will obtain unique estimates of temperature responses and will also estimate an overall mean response across varieties). 
+
+Robustly fitting these models will require data of cold hardiness (50\% LTe, i.e. lower lethal temperature), phenological data---all with matched climate data. Winegrapes uniquely provide excellent data for both hardiness and phenology, and my lab has worked to gather data over the last seven years, which I will leverage. These data include a mix of long-term observations, including data stretching back centuries for Pinot noir in Burgundy, and data of many varieties from global winegrowing regions, including across France (e.g., Alsace, Bordeaux, Burgundy, Champagne), California (Napa, Sonoma, Central Valley) and the Okanagan Valley, Canada, that may lab has collected. Collaborators at INRAE Avignon, Montpellier SupAgro and INRAE Domaine de Vassal will additionally provide more data as needed. 
+
+Once the models are developed I will validate them using hindcasting, then predict potential gains and losses in growth, reproduction and survival to 1960 across winegrowing regions in Europe and North America, using gridded daily climate datasets to  (E-OBS for Europe, and DayMet for North America; shape files for all winegrowing regions provided by my collaborator, Dr. Ignacio Morales-Castilla). I plan to focus on estimating: loss to frost across the winter season with a special focus on losses in the early fall and late spring, length of growing season, as a proxy for growth, and potential losses of flowers or fruit due to heat extremes (with extremes defined as days at least 0.5$\degree$C above a variety's estimated maximum temperature for that developmental phase). Using scenarios from CMIP6 (global models of future climate)\cite{eyring2016,riahiSSP2017,cookcmip} I will then generate forecasts of the future of winegrowing regions integrating variety diversity. \\
+\fi 
+
+% My host, Isabelle Chuine (CEFE/CNRS) is an expert in phenology and modeling the whole plant life cycle for trees\cite{chuineJTB}, and will work closely on all steps of the project. She works on diverse crops and wild species and will help make sure models can be adapted to other species and systems. Dr. I\~naki Garc\'ia de Cort\'azar-Atauri is an expert on crop modeling at INRAE-Avignon, and will help with model design, data on temperature response experiments, and developing relevant metrics to estimate growth, reproduction and survival. With Dr. Chuine he runs the national phenology observation system in France (SOERE TEMPO), which will also provide data. Dr. Thierry Lacombe is an expert on variety diversity in winegrapes at Montpellier SupAgro; he will help select varieties for the model, provide data and make sure output is relevant to growers. Other colleagues at CEFE, INRAe and Montpellier SupAgro, along with existing collaborations at I have AgCanada and NASA, will support hardiness work and assist in climate projections.  
+
+\emph{Timeline:} Data gathering is already underway, with the goal of starting work on model design and parameterization in March 2028 when I arrive in France. In my first month I plan meetings to review and refine my modeling plan with my collaborators, who bring unique expertise in variety diversity, its genetics and how to make results most immediately useful to growers. Model development and fitting will be an iterative process focused on design, parameterization, validating and eventually forecasting. I expect continual consultations with my French collaborators and likely two months of discussion and effort for fitting and validation. In May I hope to begin using the model to prepare historical results, followed by forecasting with the model in June and finalizing results in July. \\
+
+{\bf Impact, outcomes \& benefits}
+
+Our aim is to provide one major building block to climate-smart agriculture: robust estimates of the thermal tolerance of a crop, and its underlying genetic levels, to help growers develop a portfolio approach to future climate. This information should allow growers to build portfolios of varieties that can deal with current climate means and extremes, and help them decide when to shift this portfolio as the climate shifts in the future.  % Additionally I expect that by modeling the full annual cycle, I will highlight key areas of uncertainty in our understanding of plant temperature response, knowledge my lab and collaborators can use to tailor future experiments and studies. 
+
+% The combined model and output for winegrapes across both Europe and North America and a suite of varieties will highlight both the opportunities and pressure points for winegrapes as a crop with climate change. I expect many areas may experience increased potential losses from shifts in frost regimes or heat extremes, but that diversity in responses across varieties may allow from adaptation options for growers. Further, I expect the holistic view will help highlight the complexity of climate change. For example, the northern edges of winegrowing today may see benefits of increased growth, but potentially also losses depending on variety or the season.  % 'I expect ...' onward -- CUT for length
+
+My research on winegrapes to date has generated high interest, both in research and public spheres. For example, my lab's recent work on variety change with warming \cite{moralescastilla}, has been cited almost 50 times in one year and led to dozens of radio and print stories, including by the BBC, NPR, \emph{The Guardian, Washington Post, El Mundo} and France24 News. I plan to communicate results through publications (I expect at least one paper in \emph{Nature Climate Change} or similar, one methods and conceptual paper in a high-profile climate change focused journal), press releases and then at various conferences and and seminar series I am involved with, including both in academic (e.g., universities), grower-focused (e.g., Napa County Farm Bureau, BC Winegrape Council) and mixed venues (e.g., international Cool Climates Wine Symposium).
+
+Importantly, I expect this research will also open new lines of communication. Climate change is a global challenge and solutions will come from shared problem solving and resilience. My hope is this research will help develop new links with growers and researchers in Europe and in turn foster deeper connections with their counterparts in North America. 
+
+Give a talk in Montpellier? Or other outreach opportunities?
+
+
+\newpage
+\pagenumbering{gobble}
+\def\section*#1{}
+\bibliography{/Users/Lizzie/Documents/git/bibtex/LizzieMainMinimal}
+
+
+% \emph{Rational for host institutions}\\
+
+% (I expect at least one paper in \emph{Nature Climate Change} or similar, one methods and conceptual paper in a high-profile climate change focused journal so that the method can be widely used for other crops and wild species, as well as potentially one paper specific to winegrapes research)
+
+
+\end{document}
