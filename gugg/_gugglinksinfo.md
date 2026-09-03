@@ -10,3 +10,7 @@ Letters:
 * Elsa
 * Chuck
 * Theresa 
+
+TO DO ...
+* Fix the title!
+* Share draft and CV with letter writers

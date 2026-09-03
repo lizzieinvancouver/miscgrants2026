@@ -6,3 +6,7 @@ Fulbright links …
 * Recommender instructions (Mary and Elsa): https://fulbrightscholars.org/sites/default/files/2024-04/FUSC-Recommender-Instructions.pdf
 
 Login: https://apply.iie.org/apply/
+
+TO DO ...
+* 6 pg CV likely required (check/do ... do for Guggenheim at same time?)
+* 3-5 pages project description

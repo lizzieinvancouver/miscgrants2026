@@ -14,5 +14,13 @@
 *.aux
 *.log
 *.blg
+*.bbl
+*.out
+COPY*
 
 notposting/
+oecd/notposting
+fulbright/notposting
+gugg/notposting
+
+fulbright/comments
